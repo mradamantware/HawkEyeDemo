@@ -1,0 +1,11 @@
+[package]
+name = "hawkeye-demo-rust"
+version = "0.1.0"
+edition = "2021"
+
+# Pinned to crates with known RustSec advisories for the supply-chain demo.
+[dependencies]
+time = "0.1.42"      # RUSTSEC-2020-0071 (potential segfault)
+chrono = "0.4.6"     # RUSTSEC-2020-0159 (localtime UB via old time)
+smallvec = "0.6.13"  # RUSTSEC-2021-0003 (buffer overflow)
+md5 = "0.7"

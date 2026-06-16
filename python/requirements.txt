@@ -1,0 +1,10 @@
+# Pinned to versions with KNOWN CVEs so the supply-chain sensor lights up.
+requests==2.19.0         # CVE-2018-18074 (credentials leaked over redirect)
+PyYAML==5.1              # CVE-2020-1747 (arbitrary code execution via yaml.load)
+Jinja2==2.10             # CVE-2019-10906 (sandbox escape)
+Django==2.2.0            # multiple CVEs
+urllib3==1.24.1          # CVE-2019-11324
+# unpinned — flagged as floating/reproducibility risk
+flask
+# known-malicious typosquat of 'colorama'
+colourama==0.1.6
